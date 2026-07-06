@@ -24,7 +24,7 @@ export async function fetchPriceHistory(symbol, days = 250) {
 
   try {
     const period1 = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
-    const result = await yf.historical(symbol, { period1, interval: '1d' });
+    const result = await yf.historical(symbol, { period1, period2: new Date(), interval: '1d' });
     const data = result
       .filter(d => d.close != null)
       .map(d => ({ date: d.date.toISOString().split('T')[0], close: d.close }));
