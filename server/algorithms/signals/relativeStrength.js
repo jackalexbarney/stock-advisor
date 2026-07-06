@@ -1,49 +1,32 @@
 /**
- * Relative strength signal.
- * Returns score in [-1, +1].
- *
- * Compares stock's 90-day return vs:
- *   - S&P 500 (SPY)
- *   - Relevant sector ETF
+ * Relative strength signal — returns score in [-1, +1].
+ * Compares stock's return vs S&P 500 (SPY) over the past ~90 trading days.
  */
 
 import { fetchPriceHistory } from '../../data/marketData.js';
 
-const SECTOR_ETFS = {
-  Technology: 'XLK', Healthcare: 'XLV', Financials: 'XLF',
-  Energy: 'XLE', ConsumerDiscretionary: 'XLY', Industrials: 'XLI',
-  Utilities: 'XLU', Materials: 'XLB', RealEstate: 'XLRE',
-  CommunicationServices: 'XLC', ConsumerStaples: 'XLP',
-};
-
-function returnOver(history, days) {
+// Return over the full available window (first→last close)
+function windowReturn(history) {
+  if (!history || history.length < 2) return 0;
   const closes = history.map(d => d.close);
-  if (closes.length < days) return 0;
-  const start = closes[closes.length - days];
-  const end = closes[closes.length - 1];
+  const start = closes[0];
+  const end   = closes[closes.length - 1];
   return start ? (end - start) / start : 0;
 }
 
-export async function scoreRelativeStrength(symbol, sectorEtf = 'SPY') {
-  const [stockHist, spyHist, sectorHist] = await Promise.allSettled([
-    fetchPriceHistory(symbol, 95),
-    fetchPriceHistory('SPY', 95),
-    sectorEtf !== 'SPY' ? fetchPriceHistory(sectorEtf, 95) : Promise.resolve(null),
+export async function scoreRelativeStrength(symbol, sectorEtf = null) {
+  // 180 calendar days ≈ 90 trading days
+  const [stockHist, spyHist] = await Promise.all([
+    fetchPriceHistory(symbol, 180),
+    fetchPriceHistory('SPY', 180),
   ]);
 
-  if (stockHist.status !== 'fulfilled' || spyHist.status !== 'fulfilled') return 0;
+  if (!stockHist.length || !spyHist.length) return 0;
 
-  const stockReturn = returnOver(stockHist.value, 90);
-  const spyReturn = returnOver(spyHist.value, 90);
-  const spyAlpha = stockReturn - spyReturn;
+  const stockReturn = windowReturn(stockHist);
+  const spyReturn   = windowReturn(spyHist);
+  const alpha = stockReturn - spyReturn;
 
-  let score = Math.max(-1, Math.min(1, spyAlpha * 5));
-
-  if (sectorHist.status === 'fulfilled' && sectorHist.value) {
-    const sectorReturn = returnOver(sectorHist.value, 90);
-    const sectorAlpha = stockReturn - sectorReturn;
-    score = (score + Math.max(-1, Math.min(1, sectorAlpha * 5))) / 2;
-  }
-
-  return score;
+  // Scale: +10% alpha → ~+0.5 score, -10% → ~-0.5
+  return Math.max(-1, Math.min(1, alpha * 5));
 }
