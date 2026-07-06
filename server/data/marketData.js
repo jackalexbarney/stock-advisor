@@ -1,28 +1,35 @@
 /**
- * Market data fetcher.
- * Primary source: Yahoo Finance (via yfinance-compatible endpoints).
- * Fallback: Alpha Vantage (requires ALPHA_VANTAGE_KEY env var).
+ * Market data fetcher via yahoo-finance2.
  */
 
-import axios from 'axios';
+import YahooFinance from 'yahoo-finance2';
 
-const YF_BASE = 'https://query1.finance.yahoo.com/v8/finance';
-const AV_BASE = 'https://www.alphavantage.co/query';
+const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] });
+
+// In-memory cache: { key -> { value, expires } }
+const cache = new Map();
+function fromCache(key) {
+  const entry = cache.get(key);
+  if (entry && Date.now() < entry.expires) return entry.value;
+  return null;
+}
+function toCache(key, value, ttlMs = 60 * 60 * 1000) { // 1-hour default
+  cache.set(key, { value, expires: Date.now() + ttlMs });
+}
 
 export async function fetchPriceHistory(symbol, days = 250) {
-  try {
-    const period = days > 200 ? '1y' : days > 100 ? '6mo' : '3mo';
-    const url = `${YF_BASE}/chart/${symbol}?interval=1d&range=${period}`;
-    const { data } = await axios.get(url, { timeout: 8000 });
-    const chart = data?.chart?.result?.[0];
-    if (!chart) throw new Error('No chart data');
+  const key = `hist:${symbol}:${days}`;
+  const cached = fromCache(key);
+  if (cached) return cached;
 
-    const timestamps = chart.timestamp;
-    const closes = chart.indicators.quote[0].close;
-    return timestamps.map((ts, i) => ({
-      date: new Date(ts * 1000).toISOString().split('T')[0],
-      close: closes[i],
-    })).filter(d => d.close != null);
+  try {
+    const period1 = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
+    const result = await yf.historical(symbol, { period1, interval: '1d' });
+    const data = result
+      .filter(d => d.close != null)
+      .map(d => ({ date: d.date.toISOString().split('T')[0], close: d.close }));
+    toCache(key, data);
+    return data;
   } catch (e) {
     console.warn(`[marketData] fetchPriceHistory failed for ${symbol}:`, e.message);
     return [];
@@ -30,26 +37,32 @@ export async function fetchPriceHistory(symbol, days = 250) {
 }
 
 export async function fetchFundamentals(symbol) {
+  const key = `fund:${symbol}`;
+  const cached = fromCache(key);
+  if (cached) return cached;
+
   try {
-    const url = `${YF_BASE}/quoteSummary/${symbol}?modules=defaultKeyStatistics,financialData,recommendationTrend`;
-    const { data } = await axios.get(url, { timeout: 8000 });
-    const result = data?.quoteSummary?.result?.[0];
-    if (!result) return null;
+    const summary = await yf.quoteSummary(symbol, {
+      modules: ['financialData', 'defaultKeyStatistics', 'recommendationTrend'],
+    });
 
-    const stats = result.defaultKeyStatistics;
-    const fin = result.financialData;
-    const recs = result.recommendationTrend?.trend?.[0];
+    const fin   = summary.financialData ?? {};
+    const stats = summary.defaultKeyStatistics ?? {};
+    const trend = summary.recommendationTrend?.trend?.[0] ?? {};
 
-    return {
-      forwardPE:    stats?.forwardPE?.raw,
-      epsGrowth:    stats?.earningsQuarterlyGrowth?.raw,
-      revenueGrowth: fin?.revenueGrowth?.raw,
-      currentPrice: fin?.currentPrice?.raw,
-      targetPrice:  fin?.targetMeanPrice?.raw,
-      sectorPE:     null, // fetched separately via sector ETF
-      analystBuy:   recs ? (recs.strongBuy + recs.buy) : null,
-      analystSell:  recs ? (recs.strongSell + recs.sell) : null,
+    const data = {
+      currentPrice:  fin.currentPrice  ?? null,
+      targetPrice:   fin.targetMeanPrice ?? null,
+      epsGrowth:     stats.earningsQuarterlyGrowth ?? null,
+      revenueGrowth: fin.revenueGrowth  ?? null,
+      forwardPE:     stats.forwardPE    ?? null,
+      sectorPE:      null, // approximated below per sector ETF
+      analystBuy:    (trend.strongBuy ?? 0) + (trend.buy ?? 0),
+      analystSell:   (trend.strongSell ?? 0) + (trend.sell ?? 0),
     };
+
+    toCache(key, data);
+    return data;
   } catch (e) {
     console.warn(`[marketData] fetchFundamentals failed for ${symbol}:`, e.message);
     return null;
@@ -57,23 +70,37 @@ export async function fetchFundamentals(symbol) {
 }
 
 export async function fetchOptionsData(symbol) {
-  try {
-    const url = `${YF_BASE}/options/${symbol}`;
-    const { data } = await axios.get(url, { timeout: 8000 });
-    const result = data?.optionChain?.result?.[0];
-    if (!result) return null;
+  const key = `opts:${symbol}`;
+  const cached = fromCache(key);
+  if (cached) return cached;
 
-    const calls = result.options?.[0]?.calls ?? [];
-    const puts  = result.options?.[0]?.puts  ?? [];
+  try {
+    const result = await yf.options(symbol);
+    const chain = result.options?.[0];
+    if (!chain) return null;
+
+    const calls = chain.calls ?? [];
+    const puts  = chain.puts  ?? [];
     const totalCallVol = calls.reduce((s, c) => s + (c.volume ?? 0), 0);
-    const totalPutVol  = puts.reduce((s, p)  => s + (p.volume ?? 0), 0);
+    const totalPutVol  = puts.reduce((s,  p) => s + (p.volume ?? 0), 0);
     const putCallRatio = totalCallVol > 0 ? totalPutVol / totalCallVol : 1;
 
     const avgOI = calls.reduce((s, c) => s + (c.openInterest ?? 0), 0) / Math.max(calls.length, 1);
     const unusualCallVolume = calls.some(c => (c.volume ?? 0) > avgOI * 3);
     const unusualPutVolume  = puts.some(p  => (p.volume ?? 0) > avgOI * 3);
 
-    return { putCallRatio, unusualCallVolume, unusualPutVolume };
+    const data = { putCallRatio, unusualCallVolume, unusualPutVolume };
+    toCache(key, data, 30 * 60 * 1000); // 30-min cache for options
+    return data;
+  } catch (e) {
+    console.warn(`[marketData] fetchOptionsData failed for ${symbol}:`, e.message);
+    return null;
+  }
+}
+
+export async function fetchQuote(symbol) {
+  try {
+    return await yf.quote(symbol);
   } catch {
     return null;
   }
