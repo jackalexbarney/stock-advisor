@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+body { background: #080b10; color: #c9d1d9; font-family: 'Inter', system-ui, sans-serif; }
+
+.card { @apply rounded-xl border border-ink-700 bg-ink-900; }
+.card-pad { @apply p-4; }
+.label-xs { @apply text-[10px] uppercase tracking-widest text-ink-500 font-semibold; }
+.tnum { font-variant-numeric: tabular-nums; }
+.bull { color: #22c55e; }
+.bear { color: #ef4444; }
+.fade-in { animation: fadeIn 200ms ease both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; } }

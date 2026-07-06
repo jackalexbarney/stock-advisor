@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: stock-advisor-api
+    runtime: node
+    buildCommand: npm install && cd client && npm install && npm run build
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALPACA_KEY_ID
+        sync: false
+      - key: ALPACA_SECRET_KEY
+        sync: false
+      - key: ALPACA_PAPER
+        value: "true"
+      - key: NEWSAPI_KEY
+        sync: false
