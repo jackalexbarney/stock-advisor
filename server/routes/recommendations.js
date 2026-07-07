@@ -4,6 +4,9 @@ import { scoreStock, runDailyEngine } from '../algorithms/engine.js';
 
 export const recommendationsRouter = Router();
 
+// Track whether an engine run is in progress
+let _engineRunning = false;
+
 // GET /api/recommendations — today's buy/sell/hold list
 recommendationsRouter.get('/', async (req, res) => {
   try {
@@ -27,12 +30,22 @@ recommendationsRouter.get('/score/:symbol', async (req, res) => {
   }
 });
 
-// POST /api/recommendations/run — manually trigger engine (admin)
-recommendationsRouter.post('/run', async (req, res) => {
-  try {
-    const recs = await runDailyEngine();
-    res.json({ ok: true, buys: recs.buys.length, sells: recs.sells.length });
-  } catch (e) {
-    res.status(500).json({ error: e.message });
+// POST /api/recommendations/run — manually trigger engine
+// Returns immediately; engine runs asynchronously in background.
+recommendationsRouter.post('/run', (req, res) => {
+  if (_engineRunning) {
+    return res.json({ ok: false, message: 'Engine run already in progress' });
   }
+  _engineRunning = true;
+  res.json({ ok: true, message: 'Engine run started — poll GET /api/recommendations for results (takes ~3-5 min)' });
+
+  runDailyEngine()
+    .then(recs => console.log(`[engine] Done: ${recs.buys.length} buys, ${recs.sells.length} sells`))
+    .catch(e => console.error('[engine] run failed:', e.message))
+    .finally(() => { _engineRunning = false; });
+});
+
+// GET /api/recommendations/status — is the engine running?
+recommendationsRouter.get('/status', (req, res) => {
+  res.json({ running: _engineRunning });
 });
