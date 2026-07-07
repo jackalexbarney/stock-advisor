@@ -7,12 +7,15 @@ export default function Dashboard({ riskTier }) {
   const [recs, setRecs] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  // Re-fetch whenever the user switches tier
   useEffect(() => {
-    axios.get('/api/recommendations')
+    setLoading(true);
+    setRecs(null);
+    axios.get(`/api/recommendations?tier=${riskTier}`)
       .then(r => setRecs(r.data))
       .catch(() => {})
       .finally(() => setLoading(false));
-  }, []);
+  }, [riskTier]);
 
   if (loading) return <div className="flex items-center justify-center py-24 text-ink-500 text-sm">Loading today's picks…</div>;
   if (!recs?.buys) return (
@@ -31,10 +34,18 @@ export default function Dashboard({ riskTier }) {
         </div>
 
         {/* Buy recommendations */}
-        <div className="label-xs mb-3">Strong Buy</div>
-        <div className="grid sm:grid-cols-2 gap-3 mb-6">
-          {recs.buys.slice(0, 6).map(r => <StockCard key={r.symbol} rec={r} action="buy" />)}
-        </div>
+        {recs.buys?.length > 0 ? (
+          <>
+            <div className="label-xs mb-3">Strong Buy</div>
+            <div className="grid sm:grid-cols-2 gap-3 mb-6">
+              {recs.buys.slice(0, 6).map(r => <StockCard key={r.symbol} rec={r} action="buy" />)}
+            </div>
+          </>
+        ) : (
+          <div className="card card-pad text-center py-8 mb-6">
+            <div className="text-ink-500 text-sm">No buy signals at {riskTier} threshold</div>
+          </div>
+        )}
 
         {/* Sell signals */}
         {recs.sells?.length > 0 && (
@@ -47,8 +58,8 @@ export default function Dashboard({ riskTier }) {
         )}
       </div>
 
-      {/* Signal breakdown */}
-      {recs.buys[0] && (
+      {/* Signal breakdown for top buy */}
+      {recs.buys?.[0] && (
         <div className="card card-pad">
           <div className="label-xs mb-3">Algorithm Breakdown — {recs.buys[0].symbol}</div>
           <SignalBar scores={recs.buys[0].scores} />

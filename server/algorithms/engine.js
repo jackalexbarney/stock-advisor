@@ -3,17 +3,14 @@
  *
  * Signals:
  *   1. Technical  — RSI, MACD, SMA crossovers, Bollinger Bands, momentum
- *   2. Fundamental — P/E vs sector, EPS growth, revenue trend, analyst target
- *   3. Sentiment   — Reddit (r/investing, r/wallstreetbets, r/stocks) NLP score
- *   4. Options flow — unusual activity, IV rank, put/call ratio
- *   5. Relative strength — vs S&P 500 and sector ETF
+ *   2. Fundamental — 52-wk range, 3-month momentum, 200d SMA distance (price-history derived)
+ *   3. Sentiment   — Reddit NLP + Yahoo Finance news search
+ *   4. Options flow — put/call ratio, unusual activity
+ *   5. Relative strength — vs S&P 500 over 180 calendar days
  *
  * Each signal returns a score in [-1, +1].
- * Weighted average by risk tier → consensus score.
+ * Signals are tier-independent; only the weighted average differs per tier.
  * Buy when consensus > BUY_THRESHOLD, sell when < SELL_THRESHOLD.
- *
- * Self-learning: after N days, compare prediction vs actual return.
- * Adjust signal weights via simple gradient step.
  */
 
 import { scoreTechnical } from './signals/technical.js';
@@ -22,22 +19,23 @@ import { scoreSentiment } from './signals/sentiment.js';
 import { scoreOptionsFlow } from './signals/options.js';
 import { scoreRelativeStrength } from './signals/relativeStrength.js';
 import { getStockUniverse } from '../data/universe.js';
-import { saveRecommendations, loadWeights, saveWeights } from '../data/store.js';
-import { getAlpacaClient } from '../data/alpaca.js';
+import { saveRecommendations, loadLatestRecommendations, loadWeights } from '../data/store.js';
 
-const BUY_THRESHOLD = 0.28;
+const BUY_THRESHOLD  =  0.28;
 const SELL_THRESHOLD = -0.25;
 
 // Default signal weights per risk tier
-const DEFAULT_WEIGHTS = {
+export const DEFAULT_WEIGHTS = {
   conservative: { technical: 0.15, fundamental: 0.40, sentiment: 0.10, options: 0.10, relativeStrength: 0.25 },
   moderate:     { technical: 0.25, fundamental: 0.25, sentiment: 0.20, options: 0.15, relativeStrength: 0.15 },
   aggressive:   { technical: 0.20, fundamental: 0.10, sentiment: 0.35, options: 0.20, relativeStrength: 0.15 },
 };
 
-export async function scoreStock(symbol, tier = 'moderate') {
-  const weights = await loadWeights(tier) ?? DEFAULT_WEIGHTS[tier];
-
+/**
+ * Fetch all 5 raw signal scores for a symbol.
+ * These are tier-independent — apply weights afterward.
+ */
+async function fetchSignals(symbol) {
   const [technical, fundamental, sentiment, options, relativeStrength] = await Promise.allSettled([
     scoreTechnical(symbol),
     scoreFundamental(symbol),
@@ -46,16 +44,28 @@ export async function scoreStock(symbol, tier = 'moderate') {
     scoreRelativeStrength(symbol),
   ]);
 
-  const scores = {
-    technical:      technical.status === 'fulfilled' ? technical.value : 0,
-    fundamental:    fundamental.status === 'fulfilled' ? fundamental.value : 0,
-    sentiment:      sentiment.status === 'fulfilled' ? sentiment.value : 0,
-    options:        options.status === 'fulfilled' ? options.value : 0,
+  return {
+    technical:        technical.status        === 'fulfilled' ? technical.value        : 0,
+    fundamental:      fundamental.status      === 'fulfilled' ? fundamental.value      : 0,
+    sentiment:        sentiment.status        === 'fulfilled' ? sentiment.value        : 0,
+    options:          options.status          === 'fulfilled' ? options.value          : 0,
     relativeStrength: relativeStrength.status === 'fulfilled' ? relativeStrength.value : 0,
   };
+}
 
-  const consensus = Object.entries(weights).reduce((sum, [key, w]) => sum + (scores[key] ?? 0) * w, 0);
+/** Apply tier weights to a raw signal score object → consensus score. */
+function applyWeights(scores, weights) {
+  return Object.entries(weights).reduce((sum, [key, w]) => sum + (scores[key] ?? 0) * w, 0);
+}
 
+/**
+ * Score a single stock for a given tier.
+ * Used by the /score/:symbol endpoint (real-time, single stock).
+ */
+export async function scoreStock(symbol, tier = 'moderate') {
+  const weights = await loadWeights(tier) ?? DEFAULT_WEIGHTS[tier];
+  const scores  = await fetchSignals(symbol);
+  const consensus = applyWeights(scores, weights);
   return { symbol, consensus, scores, weights, tier };
 }
 
@@ -73,38 +83,68 @@ async function pLimit(items, fn, limit = 5) {
   return results;
 }
 
+/**
+ * Build buy/hold/sell lists for one tier from pre-fetched signal scores.
+ */
+function buildTierRecs(rawScores, weights) {
+  const scored = rawScores
+    .map(({ symbol, scores }) => ({
+      symbol,
+      scores,
+      weights,
+      consensus: applyWeights(scores, weights),
+    }))
+    .sort((a, b) => b.consensus - a.consensus);
+
+  return {
+    buys:      scored.filter(r => r.consensus >= BUY_THRESHOLD).slice(0, 10),
+    holds:     scored.filter(r => r.consensus >= SELL_THRESHOLD && r.consensus < BUY_THRESHOLD).slice(0, 20),
+    sells:     scored.filter(r => r.consensus < SELL_THRESHOLD).slice(0, 5),
+    allScores: scored,
+  };
+}
+
+/**
+ * Run the full engine: score all stocks once, apply all three tier weightings.
+ * Stored result includes conservative, moderate, and aggressive recommendations.
+ */
 export async function runDailyEngine() {
   const universe = await getStockUniverse();
+  const date = new Date().toISOString().split('T')[0];
 
-  // Score with concurrency cap to avoid Yahoo Finance 429 rate limits
-  const results = await pLimit(
+  // Fetch raw signals for all stocks (API calls happen here, rate-limited by queue)
+  const rawResults = await pLimit(
     universe,
-    symbol => scoreStock(symbol, 'moderate'),
+    async (symbol) => {
+      const scores = await fetchSignals(symbol);
+      return { symbol, scores };
+    },
     5,
   );
 
-  const valid = results.filter(Boolean).sort((a, b) => b.consensus - a.consensus);
+  const valid = rawResults.filter(Boolean);
 
-  const recommendations = {
-    date: new Date().toISOString().split('T')[0],
-    buys:  valid.filter(r => r.consensus >= BUY_THRESHOLD).slice(0, 10),
-    holds: valid.filter(r => r.consensus >= SELL_THRESHOLD && r.consensus < BUY_THRESHOLD).slice(0, 20),
-    sells: valid.filter(r => r.consensus < SELL_THRESHOLD).slice(0, 5),
-    allScores: valid,
+  // Load any learned weights, fall back to defaults
+  const [wCon, wMod, wAgg] = await Promise.all([
+    loadWeights('conservative').then(w => w ?? DEFAULT_WEIGHTS.conservative),
+    loadWeights('moderate').then(w => w ?? DEFAULT_WEIGHTS.moderate),
+    loadWeights('aggressive').then(w => w ?? DEFAULT_WEIGHTS.aggressive),
+  ]);
+
+  const result = {
+    date,
+    conservative: buildTierRecs(valid, wCon),
+    moderate:     buildTierRecs(valid, wMod),
+    aggressive:   buildTierRecs(valid, wAgg),
   };
 
-  await saveRecommendations(recommendations);
-  console.log(`[engine] ${recommendations.buys.length} buys, ${recommendations.sells.length} sells generated`);
-  return recommendations;
+  await saveRecommendations(result);
+
+  const m = result.moderate;
+  console.log(`[engine] ${date}: ${m.buys.length} buys, ${m.sells.length} sells (moderate)`);
+  return result;
 }
 
-/** 
- * Self-learning: compare stored predictions vs actual price returns.
- * Nudge weights toward signals that were most accurate.
- * Called weekly after market close.
- */
 export async function updateWeights(tier = 'moderate') {
-  // TODO: load stored predictions, compute accuracy per signal,
-  // gradient-step weights, clamp to [0.05, 0.60], normalize to sum=1.
   console.log(`[engine] Weight update for ${tier} tier (stub — implement after first week of data)`);
 }
