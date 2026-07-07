@@ -1,17 +1,19 @@
 /**
  * Market data fetcher via yahoo-finance2.
  * Serial request queue (1.1s gap) to stay under Yahoo Finance rate limits.
- * Fundamentals cached 24h, price history 6h, options 1h.
+ * 
+ * NOTE: yf.quoteSummary() and yf.options() require the Yahoo Finance "crumb"
+ * cookie, which gets rate-limited on shared-IP environments. We use yf.quote()
+ * and yf.historical() which use different endpoints (no crumb needed).
  */
 
 import YahooFinance from 'yahoo-finance2';
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] });
 
-// ── Serial request queue — ensures 1100ms between Yahoo Finance calls ─────
+// ── Serial request queue — 1100ms between Yahoo Finance calls ─────────────
 let _lastAt = 0;
 let _q = Promise.resolve();
-
 function enqueue(fn) {
   const p = _q.then(async () => {
     const gap = 1100 - (Date.now() - _lastAt);
@@ -19,7 +21,6 @@ function enqueue(fn) {
     _lastAt = Date.now();
     return fn();
   });
-  // Keep the chain alive even if this item rejects
   _q = p.catch(() => {});
   return p;
 }
@@ -34,7 +35,6 @@ async function yfCall(fn, attempts = 3) {
                     err?.message?.includes('crumb') ||
                     err?.status === 429;
       if (is429 && i < attempts - 1) {
-        // Back off 4s, 8s before retrying
         await new Promise(r => setTimeout(r, 4000 * (i + 1)));
       } else {
         throw err;
@@ -54,9 +54,9 @@ function toCache(key, value, ttlMs) {
   cache.set(key, { value, expires: Date.now() + ttlMs });
 }
 
-const TTL_HIST = 6  * 60 * 60 * 1000; // 6h  — daily bars don't change intraday
-const TTL_FUND = 24 * 60 * 60 * 1000; // 24h — fundamentals are published weekly
-const TTL_OPTS =      60 * 60 * 1000; // 1h  — options are intraday data
+const TTL_HIST  = 6  * 60 * 60 * 1000; // 6h  — daily bars
+const TTL_FUND  = 24 * 60 * 60 * 1000; // 24h — fundamentals
+const TTL_OPTS  =      60 * 60 * 1000; // 1h  — options
 
 export async function fetchPriceHistory(symbol, days = 250) {
   const key = `hist:${symbol}:${days}`;
@@ -79,31 +79,43 @@ export async function fetchPriceHistory(symbol, days = 250) {
   }
 }
 
+/**
+ * Fundamentals via yf.quote() — uses /v7/finance/quote endpoint (no crumb needed).
+ * Fields available: regularMarketPrice, forwardPE, trailingPE, priceToBook,
+ * epsForwardAnnual, epsTrailingTwelveMonths, fiftyTwoWeekHigh, fiftyTwoWeekLow,
+ * averageAnalystRating, marketCap.
+ */
 export async function fetchFundamentals(symbol) {
   const key = `fund:${symbol}`;
   const hit = fromCache(key);
   if (hit) return hit;
 
   try {
-    const summary = await yfCall(() =>
-      yf.quoteSummary(symbol, {
-        modules: ['financialData', 'defaultKeyStatistics', 'recommendationTrend'],
-      })
-    );
+    const q = await yfCall(() => yf.quote(symbol));
 
-    const fin   = summary.financialData ?? {};
-    const stats = summary.defaultKeyStatistics ?? {};
-    const trend = summary.recommendationTrend?.trend?.[0] ?? {};
+    const epsForward  = q.epsForwardAnnual  ?? null;
+    const epsTrailing = q.epsTrailingTwelveMonths ?? null;
+    const epsGrowth = (epsForward != null && epsTrailing != null && Math.abs(epsTrailing) > 0.01)
+      ? (epsForward - epsTrailing) / Math.abs(epsTrailing)
+      : null;
+
+    const high52  = q.fiftyTwoWeekHigh ?? null;
+    const low52   = q.fiftyTwoWeekLow  ?? null;
+    const current = q.regularMarketPrice ?? null;
+    const range52 = (high52 && low52 && high52 !== low52)
+      ? (current - low52) / (high52 - low52)   // 0=at 52-wk low, 1=at 52-wk high
+      : null;
 
     const data = {
-      currentPrice:  fin.currentPrice    ?? null,
-      targetPrice:   fin.targetMeanPrice ?? null,
-      epsGrowth:     stats.earningsQuarterlyGrowth ?? null,
-      revenueGrowth: fin.revenueGrowth   ?? null,
-      forwardPE:     stats.forwardPE     ?? null,
+      currentPrice:  current,
+      targetPrice:   null,         // not available via quote endpoint
+      epsGrowth,
+      revenueGrowth: null,         // not available via quote endpoint
+      forwardPE:     q.forwardPE   ?? null,
+      trailingPE:    q.trailingPE  ?? null,
       sectorPE:      null,
-      analystBuy:    (trend.strongBuy  ?? 0) + (trend.buy  ?? 0),
-      analystSell:   (trend.strongSell ?? 0) + (trend.sell ?? 0),
+      range52,                     // 52-week position [0, 1] — lower = more upside
+      analystRating: q.averageAnalystRating ?? null,  // e.g. "1.8 - Buy"
     };
 
     toCache(key, data, TTL_FUND);
@@ -114,6 +126,10 @@ export async function fetchFundamentals(symbol) {
   }
 }
 
+/**
+ * Options data. Uses yf.options() which requires the crumb — may fail on
+ * rate-limited IPs. Score returns 0 on failure (graceful degradation).
+ */
 export async function fetchOptionsData(symbol) {
   const key = `opts:${symbol}`;
   const hit = fromCache(key);
