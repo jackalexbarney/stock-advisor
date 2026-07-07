@@ -6,6 +6,23 @@ import YahooFinance from 'yahoo-finance2';
 
 const yf = new YahooFinance({ suppressNotices: ['yahooSurvey'] });
 
+/** Retry a yahoo-finance2 call up to `attempts` times with exponential backoff on 429. */
+async function withRetry(fn, attempts = 3) {
+  let delay = 2000;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fn();
+    } catch (err) {
+      const is429 = err?.message?.includes('429') || err?.status === 429;
+      if (is429 && i < attempts - 1) {
+        await new Promise(r => setTimeout(r, delay * (i + 1)));
+      } else {
+        throw err;
+      }
+    }
+  }
+}
+
 // In-memory cache: { key -> { value, expires } }
 const cache = new Map();
 function fromCache(key) {
@@ -24,7 +41,7 @@ export async function fetchPriceHistory(symbol, days = 250) {
 
   try {
     const period1 = new Date(Date.now() - days * 24 * 60 * 60 * 1000);
-    const result = await yf.historical(symbol, { period1, period2: new Date(), interval: '1d' });
+    const result = await withRetry(() => yf.historical(symbol, { period1, period2: new Date(), interval: '1d' }));
     const data = result
       .filter(d => d.close != null)
       .map(d => ({ date: d.date.toISOString().split('T')[0], close: d.close }));
@@ -42,9 +59,9 @@ export async function fetchFundamentals(symbol) {
   if (cached) return cached;
 
   try {
-    const summary = await yf.quoteSummary(symbol, {
+    const summary = await withRetry(() => yf.quoteSummary(symbol, {
       modules: ['financialData', 'defaultKeyStatistics', 'recommendationTrend'],
-    });
+    }));
 
     const fin   = summary.financialData ?? {};
     const stats = summary.defaultKeyStatistics ?? {};
@@ -75,7 +92,7 @@ export async function fetchOptionsData(symbol) {
   if (cached) return cached;
 
   try {
-    const result = await yf.options(symbol);
+    const result = await withRetry(() => yf.options(symbol));
     const chain = result.options?.[0];
     if (!chain) return null;
 

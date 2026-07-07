@@ -59,12 +59,28 @@ export async function scoreStock(symbol, tier = 'moderate') {
   return { symbol, consensus, scores, weights, tier };
 }
 
+/** Run up to `limit` async tasks concurrently. */
+async function pLimit(items, fn, limit = 5) {
+  const results = [];
+  let idx = 0;
+  async function worker() {
+    while (idx < items.length) {
+      const i = idx++;
+      results[i] = await fn(items[i]).catch(() => null);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return results;
+}
+
 export async function runDailyEngine() {
   const universe = await getStockUniverse();
-  const tiers = ['conservative', 'moderate', 'aggressive'];
 
-  const results = await Promise.all(
-    universe.map(symbol => scoreStock(symbol, 'moderate').catch(() => null))
+  // Score with concurrency cap to avoid Yahoo Finance 429 rate limits
+  const results = await pLimit(
+    universe,
+    symbol => scoreStock(symbol, 'moderate'),
+    5,
   );
 
   const valid = results.filter(Boolean).sort((a, b) => b.consensus - a.consensus);
