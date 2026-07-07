@@ -1,0 +1,4693 @@
+{
+  "date": "2026-07-07",
+  "conservative": {
+    "buys": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.4250961760701859
+      },
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.4085739015834947
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.39633212940401336
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.39307491257176996
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.3901498194423654
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.35628722858685136
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.3170720593377966
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.30918335715308853
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.308
+      },
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2861752442595822
+      }
+    ],
+    "holds": [
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2537179029526618
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.24734028940017622
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.24713407188372233
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2434096663938403
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.20321917632381625
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.18851344541150022
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.14108788218777718
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.13313240263468257
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.12837880942382815
+      },
+      {
+        "symbol": "AVGO",
+        "scores": {
+          "technical": -0.009796026468786481,
+          "fundamental": 0.2357473318645378,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.07337209303557857
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.1111725520343918
+      },
+      {
+        "symbol": "HOOD",
+        "scores": {
+          "technical": 0.22000000000000003,
+          "fundamental": 0.40634400581943664,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.46602312562644344
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.09903182092116383
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.08959362953673297
+      },
+      {
+        "symbol": "QCOM",
+        "scores": {
+          "technical": -0.14500000000000002,
+          "fundamental": 0.4148029334551431,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.4408302937775842
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.05396359993766123
+      },
+      {
+        "symbol": "MRK",
+        "scores": {
+          "technical": -0.12398384686686184,
+          "fundamental": -0.1131732874842849,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.40091279299447824
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.046361306224876324
+      },
+      {
+        "symbol": "XOM",
+        "scores": {
+          "technical": 0.02448504197447736,
+          "fundamental": -0.18035564206638088,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.30967428966368793
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.02894907188554123
+      },
+      {
+        "symbol": "PEP",
+        "scores": {
+          "technical": 0.06500213227152651,
+          "fundamental": 0.04751625471182021,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.13060710654053126
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.0061050450903242515
+      },
+      {
+        "symbol": "AMZN",
+        "scores": {
+          "technical": 0.12630996674421807,
+          "fundamental": 0.1753575055465461,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4593700187351536
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.004246992546462769
+      },
+      {
+        "symbol": "TSLA",
+        "scores": {
+          "technical": 0.20584201968402366,
+          "fundamental": 0.29633991516034525,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.7228827706972807
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.011308423657578504
+      },
+      {
+        "symbol": "GTLB",
+        "scores": {
+          "technical": -0.03064267289161829,
+          "fundamental": 0.4207262522420589,
+          "sentiment": 0.3,
+          "options": -0.15,
+          "relativeStrength": -0.7670493656324057
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.013068241445020584
+      },
+      {
+        "symbol": "BAC",
+        "scores": {
+          "technical": -0.16784801209475803,
+          "fundamental": 0.030873191778964804,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.06114208401248711
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.018113446105749557
+      }
+    ],
+    "sells": [
+      {
+        "symbol": "RBLX",
+        "scores": {
+          "technical": 0.14500000000000002,
+          "fundamental": 0.04439609894871996,
+          "sentiment": 0.1,
+          "options": -0.6499999999999999,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.26549156042051203
+      },
+      {
+        "symbol": "NFLX",
+        "scores": {
+          "technical": 0.19449560426595,
+          "fundamental": -0.16873800131579295,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.2783208598864247
+      },
+      {
+        "symbol": "ADBE",
+        "scores": {
+          "technical": 0.023262799261965908,
+          "fundamental": -0.030363596488897915,
+          "sentiment": -0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.2786560187062643
+      },
+      {
+        "symbol": "INTU",
+        "scores": {
+          "technical": 0.1881614260128718,
+          "fundamental": -0.19968205182862192,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.291648606829518
+      },
+      {
+        "symbol": "LCID",
+        "scores": {
+          "technical": 0.28,
+          "fundamental": -0.23264858530750282,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.3010594341230011
+      }
+    ],
+    "allScores": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.4250961760701859
+      },
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.4085739015834947
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.39633212940401336
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.39307491257176996
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.3901498194423654
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.35628722858685136
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.3170720593377966
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.30918335715308853
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.308
+      },
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2861752442595822
+      },
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2537179029526618
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.24734028940017622
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.24713407188372233
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.2434096663938403
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.20321917632381625
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.18851344541150022
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.14108788218777718
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.13313240263468257
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.12837880942382815
+      },
+      {
+        "symbol": "AVGO",
+        "scores": {
+          "technical": -0.009796026468786481,
+          "fundamental": 0.2357473318645378,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.07337209303557857
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.1111725520343918
+      },
+      {
+        "symbol": "HOOD",
+        "scores": {
+          "technical": 0.22000000000000003,
+          "fundamental": 0.40634400581943664,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.46602312562644344
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.09903182092116383
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.08959362953673297
+      },
+      {
+        "symbol": "QCOM",
+        "scores": {
+          "technical": -0.14500000000000002,
+          "fundamental": 0.4148029334551431,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.4408302937775842
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.05396359993766123
+      },
+      {
+        "symbol": "MRK",
+        "scores": {
+          "technical": -0.12398384686686184,
+          "fundamental": -0.1131732874842849,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.40091279299447824
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.046361306224876324
+      },
+      {
+        "symbol": "XOM",
+        "scores": {
+          "technical": 0.02448504197447736,
+          "fundamental": -0.18035564206638088,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.30967428966368793
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.02894907188554123
+      },
+      {
+        "symbol": "PEP",
+        "scores": {
+          "technical": 0.06500213227152651,
+          "fundamental": 0.04751625471182021,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.13060710654053126
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.0061050450903242515
+      },
+      {
+        "symbol": "AMZN",
+        "scores": {
+          "technical": 0.12630996674421807,
+          "fundamental": 0.1753575055465461,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4593700187351536
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": 0.004246992546462769
+      },
+      {
+        "symbol": "TSLA",
+        "scores": {
+          "technical": 0.20584201968402366,
+          "fundamental": 0.29633991516034525,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.7228827706972807
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.011308423657578504
+      },
+      {
+        "symbol": "GTLB",
+        "scores": {
+          "technical": -0.03064267289161829,
+          "fundamental": 0.4207262522420589,
+          "sentiment": 0.3,
+          "options": -0.15,
+          "relativeStrength": -0.7670493656324057
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.013068241445020584
+      },
+      {
+        "symbol": "BAC",
+        "scores": {
+          "technical": -0.16784801209475803,
+          "fundamental": 0.030873191778964804,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.06114208401248711
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.018113446105749557
+      },
+      {
+        "symbol": "CVX",
+        "scores": {
+          "technical": -0.0023925443982815084,
+          "fundamental": -0.15405860803962,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -0.0046067426616625
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.02313401054100584
+      },
+      {
+        "symbol": "U",
+        "scores": {
+          "technical": 0.043024563997001775,
+          "fundamental": 0.34247268689017996,
+          "sentiment": 0.3,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.036557240644377736
+      },
+      {
+        "symbol": "NIO",
+        "scores": {
+          "technical": 0.1177094074803154,
+          "fundamental": -0.13068521250170925,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -0.21307410670269183
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.04788620055430934
+      },
+      {
+        "symbol": "VZ",
+        "scores": {
+          "technical": -0.04327886674539193,
+          "fundamental": -0.07922889255685234,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.12255394440070347
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.04882187313472559
+      },
+      {
+        "symbol": "COST",
+        "scores": {
+          "technical": 0.03665095430290057,
+          "fundamental": -0.036293983995885,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.20469765633436493
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.05019436453651015
+      },
+      {
+        "symbol": "RIVN",
+        "scores": {
+          "technical": 0.25613150101101145,
+          "fundamental": 0.3570282579922165,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.0687689716514617
+      },
+      {
+        "symbol": "V",
+        "scores": {
+          "technical": -0.07335300451510814,
+          "fundamental": 0.05134010154553437,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4387257479872897
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.07014834705587489
+      },
+      {
+        "symbol": "HD",
+        "scores": {
+          "technical": 0.12334963919582179,
+          "fundamental": 0.10711332852402722,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.5855546575928361
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.07504088710922487
+      },
+      {
+        "symbol": "PATH",
+        "scores": {
+          "technical": 0.09304271918007086,
+          "fundamental": 0.2690768175324809,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.08841286510999699
+      },
+      {
+        "symbol": "PFE",
+        "scores": {
+          "technical": 0.01548061067422949,
+          "fundamental": 0.08663863451667966,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.6433061016373991
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.09384898000154349
+      },
+      {
+        "symbol": "META",
+        "scores": {
+          "technical": 0.16217366673693087,
+          "fundamental": 0.14206721741106637,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.7287021329092755
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.1010225962523527
+      },
+      {
+        "symbol": "SOFI",
+        "scores": {
+          "technical": 0.13912682318921465,
+          "fundamental": 0.2875658712953026,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.10410462800349674
+      },
+      {
+        "symbol": "JPM",
+        "scores": {
+          "technical": -0.11090789531563545,
+          "fundamental": -0.0973420535201026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.28121421288594084
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.10587655892687156
+      },
+      {
+        "symbol": "WMT",
+        "scores": {
+          "technical": 0.0616879777558067,
+          "fundamental": -0.06240809017560442,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.4569195208497846
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.12993991961931692
+      },
+      {
+        "symbol": "PYPL",
+        "scores": {
+          "technical": 0.20050372849925252,
+          "fundamental": 0.1459815119978149,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.14153183592598617
+      },
+      {
+        "symbol": "ZS",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18122512538716817,
+          "sentiment": 0.2,
+          "options": 0.05,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.14950994984513272
+      },
+      {
+        "symbol": "MSFT",
+        "scores": {
+          "technical": 0.10883448285765521,
+          "fundamental": 0.20919710734767016,
+          "sentiment": -0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.15999598463228365
+      },
+      {
+        "symbol": "MA",
+        "scores": {
+          "technical": -0.008553414166506318,
+          "fundamental": 0.06588979600383438,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.8029442159349265
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.16566314770717383
+      },
+      {
+        "symbol": "ORCL",
+        "scores": {
+          "technical": -0.020000000000000004,
+          "fundamental": 0.10878925970546391,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.16948429611781443
+      },
+      {
+        "symbol": "DIS",
+        "scores": {
+          "technical": -0.005858363638524879,
+          "fundamental": 0.18461160387955572,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.17703411299395644
+      },
+      {
+        "symbol": "TMO",
+        "scores": {
+          "technical": -0.06454816653678802,
+          "fundamental": 0.15182197336240372,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.18895343563555672
+      },
+      {
+        "symbol": "COIN",
+        "scores": {
+          "technical": 0.2940945259993156,
+          "fundamental": 0.005144857737016839,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.20382787800529592
+      },
+      {
+        "symbol": "CRM",
+        "scores": {
+          "technical": 0.1140294987907866,
+          "fundamental": -0.01353300854006001,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.208308778597406
+      },
+      {
+        "symbol": "PLTR",
+        "scores": {
+          "technical": 0.20290454818424575,
+          "fundamental": -0.09057743564231727,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.24579529202929004
+      },
+      {
+        "symbol": "RBLX",
+        "scores": {
+          "technical": 0.14500000000000002,
+          "fundamental": 0.04439609894871996,
+          "sentiment": 0.1,
+          "options": -0.6499999999999999,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.26549156042051203
+      },
+      {
+        "symbol": "NFLX",
+        "scores": {
+          "technical": 0.19449560426595,
+          "fundamental": -0.16873800131579295,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.2783208598864247
+      },
+      {
+        "symbol": "ADBE",
+        "scores": {
+          "technical": 0.023262799261965908,
+          "fundamental": -0.030363596488897915,
+          "sentiment": -0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.2786560187062643
+      },
+      {
+        "symbol": "INTU",
+        "scores": {
+          "technical": 0.1881614260128718,
+          "fundamental": -0.19968205182862192,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.291648606829518
+      },
+      {
+        "symbol": "LCID",
+        "scores": {
+          "technical": 0.28,
+          "fundamental": -0.23264858530750282,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.3010594341230011
+      },
+      {
+        "symbol": "ACN",
+        "scores": {
+          "technical": 0.21211923169141741,
+          "fundamental": -0.23694693865557886,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.15,
+          "fundamental": 0.4,
+          "sentiment": 0.1,
+          "options": 0.1,
+          "relativeStrength": 0.25
+        },
+        "consensus": -0.30296089070851895
+      }
+    ]
+  },
+  "moderate": {
+    "buys": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.36439012467144416
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.3048195699724594
+      }
+    ],
+    "holds": [
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.26033911443008356
+      },
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2596857759091552
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.24586464327335045
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23708945527599246
+      },
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.22476853917201361
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2173204280293197
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2121634194313879
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.20641687643719736
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.19999999999999998
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18899345358049405
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1603562091189461
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1525262327133032
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14763973205596123
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14600077801561193
+      },
+      {
+        "symbol": "HOOD",
+        "scores": {
+          "technical": 0.22000000000000003,
+          "fundamental": 0.40634400581943664,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.46602312562644344
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12668253261089268
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12561065401848204
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1087958670803344
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0951723191618197
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0707568520495451
+      },
+      {
+        "symbol": "AVGO",
+        "scores": {
+          "technical": -0.009796026468786481,
+          "fundamental": 0.2357473318645378,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.07337209303557857
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.06749364030427461
+      }
+    ],
+    "sells": [],
+    "allScores": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.36439012467144416
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.3048195699724594
+      },
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.26033911443008356
+      },
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2596857759091552
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.24586464327335045
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23708945527599246
+      },
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.22476853917201361
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2173204280293197
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2121634194313879
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.20641687643719736
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.19999999999999998
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18899345358049405
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1603562091189461
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1525262327133032
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14763973205596123
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14600077801561193
+      },
+      {
+        "symbol": "HOOD",
+        "scores": {
+          "technical": 0.22000000000000003,
+          "fundamental": 0.40634400581943664,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.46602312562644344
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12668253261089268
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12561065401848204
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1087958670803344
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0951723191618197
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0707568520495451
+      },
+      {
+        "symbol": "AVGO",
+        "scores": {
+          "technical": -0.009796026468786481,
+          "fundamental": 0.2357473318645378,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.07337209303557857
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.06749364030427461
+      },
+      {
+        "symbol": "AMZN",
+        "scores": {
+          "technical": 0.12630996674421807,
+          "fundamental": 0.1753575055465461,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4593700187351536
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.066511365262418
+      },
+      {
+        "symbol": "U",
+        "scores": {
+          "technical": 0.043024563997001775,
+          "fundamental": 0.34247268689017996,
+          "sentiment": 0.3,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.06637431272179542
+      },
+      {
+        "symbol": "TSLA",
+        "scores": {
+          "technical": 0.20584201968402366,
+          "fundamental": 0.29633991516034525,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.7228827706972807
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.05711306810650013
+      },
+      {
+        "symbol": "XOM",
+        "scores": {
+          "technical": 0.02448504197447736,
+          "fundamental": -0.18035564206638088,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.30967428966368793
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.04748349342657732
+      },
+      {
+        "symbol": "QCOM",
+        "scores": {
+          "technical": -0.14500000000000002,
+          "fundamental": 0.4148029334551431,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.4408302937775842
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.04132618929714814
+      },
+      {
+        "symbol": "CVX",
+        "scores": {
+          "technical": -0.0023925443982815084,
+          "fundamental": -0.15405860803962,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -0.0046067426616625
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.040196200491275265
+      },
+      {
+        "symbol": "PEP",
+        "scores": {
+          "technical": 0.06500213227152651,
+          "fundamental": 0.04751625471182021,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.13060710654053126
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.028538530764756993
+      },
+      {
+        "symbol": "NIO",
+        "scores": {
+          "technical": 0.1177094074803154,
+          "fundamental": -0.13068521250170925,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -0.21307410670269183
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.024794932739247766
+      },
+      {
+        "symbol": "MRK",
+        "scores": {
+          "technical": -0.12398384686686184,
+          "fundamental": -0.1131732874842849,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.40091279299447824
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.02084763536138505
+      },
+      {
+        "symbol": "GTLB",
+        "scores": {
+          "technical": -0.03064267289161829,
+          "fundamental": 0.4207262522420589,
+          "sentiment": 0.3,
+          "options": -0.15,
+          "relativeStrength": -0.7670493656324057
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0199634899927493
+      },
+      {
+        "symbol": "RIVN",
+        "scores": {
+          "technical": 0.25613150101101145,
+          "fundamental": 0.3570282579922165,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0032899397508069916
+      },
+      {
+        "symbol": "PATH",
+        "scores": {
+          "technical": 0.09304271918007086,
+          "fundamental": 0.2690768175324809,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0005298841781379571
+      },
+      {
+        "symbol": "VZ",
+        "scores": {
+          "technical": -0.04327886674539193,
+          "fundamental": -0.07922889255685234,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.12255394440070347
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.009010031485666578
+      },
+      {
+        "symbol": "HD",
+        "scores": {
+          "technical": 0.12334963919582179,
+          "fundamental": 0.10711332852402722,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.5855546575928361
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.010217456708963152
+      },
+      {
+        "symbol": "COST",
+        "scores": {
+          "technical": 0.03665095430290057,
+          "fundamental": -0.036293983995885,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.20469765633436493
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.010615405873400843
+      },
+      {
+        "symbol": "PFE",
+        "scores": {
+          "technical": 0.01548061067422949,
+          "fundamental": 0.08663863451667966,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.6433061016373991
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.010966103947882583
+      },
+      {
+        "symbol": "V",
+        "scores": {
+          "technical": -0.07335300451510814,
+          "fundamental": 0.05134010154553437,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4387257479872897
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.011312087940486895
+      },
+      {
+        "symbol": "SOFI",
+        "scores": {
+          "technical": 0.13912682318921465,
+          "fundamental": 0.2875658712953026,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.02332682637887068
+      },
+      {
+        "symbol": "PYPL",
+        "scores": {
+          "technical": 0.20050372849925252,
+          "fundamental": 0.1459815119978149,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.023378689875733133
+      },
+      {
+        "symbol": "BAC",
+        "scores": {
+          "technical": -0.16784801209475803,
+          "fundamental": 0.030873191778964804,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.06114208401248711
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.023415017680821368
+      },
+      {
+        "symbol": "META",
+        "scores": {
+          "technical": 0.16217366673693087,
+          "fundamental": 0.14206721741106637,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.7287021329092755
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.03324509889939202
+      },
+      {
+        "symbol": "ORCL",
+        "scores": {
+          "technical": -0.020000000000000004,
+          "fundamental": 0.10878925970546391,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.047802685073634
+      },
+      {
+        "symbol": "ZS",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18122512538716817,
+          "sentiment": 0.2,
+          "options": 0.05,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.05219371865320793
+      },
+      {
+        "symbol": "JPM",
+        "scores": {
+          "technical": -0.11090789531563545,
+          "fundamental": -0.0973420535201026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.28121421288594084
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.05424461914182563
+      },
+      {
+        "symbol": "CRM",
+        "scores": {
+          "technical": 0.1140294987907866,
+          "fundamental": -0.01353300854006001,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.06487587743731835
+      },
+      {
+        "symbol": "WMT",
+        "scores": {
+          "technical": 0.0616879777558067,
+          "fundamental": -0.06240809017560442,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.4569195208497846
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.06871795623241711
+      },
+      {
+        "symbol": "COIN",
+        "scores": {
+          "technical": 0.2940945259993156,
+          "fundamental": 0.005144857737016839,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.07519015406591688
+      },
+      {
+        "symbol": "MA",
+        "scores": {
+          "technical": -0.008553414166506318,
+          "fundamental": 0.06588979600383438,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.8029442159349265
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.08610753693090695
+      },
+      {
+        "symbol": "MSFT",
+        "scores": {
+          "technical": 0.10883448285765521,
+          "fundamental": 0.20919710734767016,
+          "sentiment": -0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.09049210244866866
+      },
+      {
+        "symbol": "PLTR",
+        "scores": {
+          "technical": 0.20290454818424575,
+          "fundamental": -0.09057743564231727,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.10191822186451788
+      },
+      {
+        "symbol": "DIS",
+        "scores": {
+          "technical": -0.005858363638524879,
+          "fundamental": 0.18461160387955572,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.10531168993974228
+      },
+      {
+        "symbol": "TMO",
+        "scores": {
+          "technical": -0.06454816653678802,
+          "fundamental": 0.15182197336240372,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.10818154829359607
+      },
+      {
+        "symbol": "NFLX",
+        "scores": {
+          "technical": 0.19449560426595,
+          "fundamental": -0.16873800131579295,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.12356059926246073
+      },
+      {
+        "symbol": "INTU",
+        "scores": {
+          "technical": 0.1881614260128718,
+          "fundamental": -0.19968205182862192,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.13288015645393753
+      },
+      {
+        "symbol": "ACN",
+        "scores": {
+          "technical": 0.21211923169141741,
+          "fundamental": -0.23694693865557886,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.13620692674104035
+      },
+      {
+        "symbol": "LCID",
+        "scores": {
+          "technical": 0.28,
+          "fundamental": -0.23264858530750282,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.13816214632687568
+      },
+      {
+        "symbol": "RBLX",
+        "scores": {
+          "technical": 0.14500000000000002,
+          "fundamental": 0.04439609894871996,
+          "sentiment": 0.1,
+          "options": -0.6499999999999999,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.18015097526281998
+      },
+      {
+        "symbol": "ADBE",
+        "scores": {
+          "technical": 0.023262799261965908,
+          "fundamental": -0.030363596488897915,
+          "sentiment": -0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.25,
+          "fundamental": 0.25,
+          "sentiment": 0.2,
+          "options": 0.15,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.191775199306733
+      }
+    ]
+  },
+  "aggressive": {
+    "buys": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.42892725923022756
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.33078238774264973
+      }
+    ],
+    "holds": [
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2517845114956652
+      },
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.25046942880962925
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23872065454302516
+      },
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23772311837388904
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23122113247352477
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23003930122733832
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.20400000000000001
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18435866005994472
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18204018172542683
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15567984886247838
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15018145478066355
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15005449932973328
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1483661212839569
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14822944125249599
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.13096447061485944
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.13006229385191848
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12412900508809716
+      },
+      {
+        "symbol": "CVX",
+        "scores": {
+          "technical": -0.0023925443982815084,
+          "fundamental": -0.15405860803962,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -0.0046067426616625
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1234246189171323
+      },
+      {
+        "symbol": "XOM",
+        "scores": {
+          "technical": 0.02448504197447736,
+          "fundamental": -0.18035564206638088,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.30967428966368793
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.10331258763781057
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0877195891664111
+      }
+    ],
+    "sells": [],
+    "allScores": [
+      {
+        "symbol": "DDOG",
+        "scores": {
+          "technical": 0.03171209361649917,
+          "fundamental": 0.2258484050692775,
+          "sentiment": 0.6,
+          "options": 0.2,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.42892725923022756
+      },
+      {
+        "symbol": "NET",
+        "scores": {
+          "technical": 0.03854559753666004,
+          "fundamental": 0.2307326823531774,
+          "sentiment": 0.4,
+          "options": 0.05,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.33078238774264973
+      },
+      {
+        "symbol": "SNOW",
+        "scores": {
+          "technical": -0.16256729294995084,
+          "fundamental": 0.20741594882563924,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.5903758346872766
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.2517845114956652
+      },
+      {
+        "symbol": "IOT",
+        "scores": {
+          "technical": 0.16919538934631764,
+          "fundamental": 0.3383771842147336,
+          "sentiment": 0.1,
+          "options": 0.7,
+          "relativeStrength": 0.05195088345928259
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.25046942880962925
+      },
+      {
+        "symbol": "S",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18399848990863021,
+          "sentiment": 0.2,
+          "options": 0.4,
+          "relativeStrength": 0.4421387036810809
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23872065454302516
+      },
+      {
+        "symbol": "CSCO",
+        "scores": {
+          "technical": -0.10412527398144383,
+          "fundamental": 0.38548173170177813,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23772311837388904
+      },
+      {
+        "symbol": "CRWD",
+        "scores": {
+          "technical": -0.02644235299030387,
+          "fundamental": 0.16509603071585538,
+          "sentiment": 0.4,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23122113247352477
+      },
+      {
+        "symbol": "TXN",
+        "scores": {
+          "technical": -0.12306556082001846,
+          "fundamental": 0.3465241339134203,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.23003930122733832
+      },
+      {
+        "symbol": "OKTA",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.14999999999999997,
+          "sentiment": 0.3,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.20400000000000001
+      },
+      {
+        "symbol": "AMD",
+        "scores": {
+          "technical": -0.1520809051493423,
+          "fundamental": 0.29774841089813175,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18435866005994472
+      },
+      {
+        "symbol": "INTC",
+        "scores": {
+          "technical": -0.02795600384970162,
+          "fundamental": 0.37631382495367144,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.18204018172542683
+      },
+      {
+        "symbol": "ROKU",
+        "scores": {
+          "technical": 0.12082467430280784,
+          "fundamental": 0.1651491400191683,
+          "sentiment": 0.1,
+          "options": -0.35,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15567984886247838
+      },
+      {
+        "symbol": "JNJ",
+        "scores": {
+          "technical": 0.011255619582790768,
+          "fundamental": -0.020696691358945835,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15018145478066355
+      },
+      {
+        "symbol": "GOOGL",
+        "scores": {
+          "technical": 0.10571081629424535,
+          "fundamental": 0.23344112649667026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.23712148947478126
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.15005449932973328
+      },
+      {
+        "symbol": "UNH",
+        "scores": {
+          "technical": -0.07120392567292952,
+          "fundamental": 0.15146871808661844,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.7497335640658731
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1483661212839569
+      },
+      {
+        "symbol": "AAPL",
+        "scores": {
+          "technical": 0.05883733896030496,
+          "fundamental": 0.06552979876733786,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.6327266238913415
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.14822944125249599
+      },
+      {
+        "symbol": "LLY",
+        "scores": {
+          "technical": -0.15618397699324174,
+          "fundamental": 0.11344698264414885,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": 0.3057104516606195
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.13096447061485944
+      },
+      {
+        "symbol": "NVDA",
+        "scores": {
+          "technical": 0.17330586565109382,
+          "fundamental": 0.21255377922672578,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.20569504800648575
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.13006229385191848
+      },
+      {
+        "symbol": "ABBV",
+        "scores": {
+          "technical": -0.030859487437113226,
+          "fundamental": 0.10806557576061923,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.32996229999638593
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.12412900508809716
+      },
+      {
+        "symbol": "CVX",
+        "scores": {
+          "technical": -0.0023925443982815084,
+          "fundamental": -0.15405860803962,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -0.0046067426616625
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.1234246189171323
+      },
+      {
+        "symbol": "XOM",
+        "scores": {
+          "technical": 0.02448504197447736,
+          "fundamental": -0.18035564206638088,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": 0.30967428966368793
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.10331258763781057
+      },
+      {
+        "symbol": "KO",
+        "scores": {
+          "technical": -0.05101110887323418,
+          "fundamental": -0.09608121115469524,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.7168662137101831
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0877195891664111
+      },
+      {
+        "symbol": "HOOD",
+        "scores": {
+          "technical": 0.22000000000000003,
+          "fundamental": 0.40634400581943664,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.46602312562644344
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.08473093173797715
+      },
+      {
+        "symbol": "AMZN",
+        "scores": {
+          "technical": 0.12630996674421807,
+          "fundamental": 0.1753575055465461,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4593700187351536
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0788922410932252
+      },
+      {
+        "symbol": "U",
+        "scores": {
+          "technical": 0.043024563997001775,
+          "fundamental": 0.34247268689017996,
+          "sentiment": 0.3,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.07785218148841838
+      },
+      {
+        "symbol": "MRK",
+        "scores": {
+          "technical": -0.12398384686686184,
+          "fundamental": -0.1131732874842849,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": 0.40091279299447824
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.05902282082737087
+      },
+      {
+        "symbol": "NIO",
+        "scores": {
+          "technical": 0.1177094074803154,
+          "fundamental": -0.13068521250170925,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -0.21307410670269183
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.0585122442404884
+      },
+      {
+        "symbol": "VZ",
+        "scores": {
+          "technical": -0.04327886674539193,
+          "fundamental": -0.07922889255685234,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.12255394440070347
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.035038245735130855
+      },
+      {
+        "symbol": "PEP",
+        "scores": {
+          "technical": 0.06500213227152651,
+          "fundamental": 0.04751625471182021,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.13060710654053126
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.03316098594440763
+      },
+      {
+        "symbol": "AVGO",
+        "scores": {
+          "technical": -0.009796026468786481,
+          "fundamental": 0.2357473318645378,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": 0.07337209303557857
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.032621341848033274
+      },
+      {
+        "symbol": "TSLA",
+        "scores": {
+          "technical": 0.20584201968402366,
+          "fundamental": 0.29633991516034525,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.7228827706972807
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.03236997984824713
+      },
+      {
+        "symbol": "V",
+        "scores": {
+          "technical": -0.07335300451510814,
+          "fundamental": 0.05134010154553437,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.4387257479872897
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.029654547053438354
+      },
+      {
+        "symbol": "PFE",
+        "scores": {
+          "technical": 0.01548061067422949,
+          "fundamental": 0.08663863451667966,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -0.6433061016373991
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.020264070340903995
+      },
+      {
+        "symbol": "QCOM",
+        "scores": {
+          "technical": -0.14500000000000002,
+          "fundamental": 0.4148029334551431,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.4408302937775842
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.01635574927887666
+      },
+      {
+        "symbol": "COST",
+        "scores": {
+          "technical": 0.03665095430290057,
+          "fundamental": -0.036293983995885,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.20469765633436493
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": 0.007996144010836873
+      },
+      {
+        "symbol": "ORCL",
+        "scores": {
+          "technical": -0.020000000000000004,
+          "fundamental": 0.10878925970546391,
+          "sentiment": 0.4,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.0031210740294536077
+      },
+      {
+        "symbol": "JPM",
+        "scores": {
+          "technical": -0.11090789531563545,
+          "fundamental": -0.0973420535201026,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -0.28121421288594084
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.004097916348028488
+      },
+      {
+        "symbol": "GTLB",
+        "scores": {
+          "technical": -0.03064267289161829,
+          "fundamental": 0.4207262522420589,
+          "sentiment": 0.3,
+          "options": -0.15,
+          "relativeStrength": -0.7670493656324057
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.004113314198978618
+      },
+      {
+        "symbol": "BAC",
+        "scores": {
+          "technical": -0.16784801209475803,
+          "fundamental": 0.030873191778964804,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.06114208401248711
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.004653595842928196
+      },
+      {
+        "symbol": "HD",
+        "scores": {
+          "technical": 0.12334963919582179,
+          "fundamental": 0.10711332852402722,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.5855546575928361
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.01745193794735833
+      },
+      {
+        "symbol": "CRM",
+        "scores": {
+          "technical": 0.1140294987907866,
+          "fundamental": -0.01353300854006001,
+          "sentiment": 0.3,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.023547401095848686
+      },
+      {
+        "symbol": "PATH",
+        "scores": {
+          "technical": 0.09304271918007086,
+          "fundamental": 0.2690768175324809,
+          "sentiment": 0,
+          "options": 0.4,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.024483774410737708
+      },
+      {
+        "symbol": "PYPL",
+        "scores": {
+          "technical": 0.20050372849925252,
+          "fundamental": 0.1459815119978149,
+          "sentiment": 0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.02530110310036801
+      },
+      {
+        "symbol": "ZS",
+        "scores": {
+          "technical": 0.020000000000000004,
+          "fundamental": 0.18122512538716817,
+          "sentiment": 0.2,
+          "options": 0.05,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.047877487461283175
+      },
+      {
+        "symbol": "SOFI",
+        "scores": {
+          "technical": 0.13912682318921465,
+          "fundamental": 0.2875658712953026,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.05841804823262681
+      },
+      {
+        "symbol": "WMT",
+        "scores": {
+          "technical": 0.0616879777558067,
+          "fundamental": -0.06240809017560442,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.4569195208497846
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.06244114159386679
+      },
+      {
+        "symbol": "META",
+        "scores": {
+          "technical": 0.16217366673693087,
+          "fundamental": 0.14206721741106637,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -0.7287021329092755
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.06266386484789851
+      },
+      {
+        "symbol": "RIVN",
+        "scores": {
+          "technical": 0.25613150101101145,
+          "fundamental": 0.3570282579922165,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.06307087399857605
+      },
+      {
+        "symbol": "MA",
+        "scores": {
+          "technical": -0.008553414166506318,
+          "fundamental": 0.06588979600383438,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -0.8029442159349265
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.0805633356231568
+      },
+      {
+        "symbol": "PLTR",
+        "scores": {
+          "technical": 0.20290454818424575,
+          "fundamental": -0.09057743564231727,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.08347683392738256
+      },
+      {
+        "symbol": "COIN",
+        "scores": {
+          "technical": 0.2940945259993156,
+          "fundamental": 0.005144857737016839,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.09066660902643518
+      },
+      {
+        "symbol": "NFLX",
+        "scores": {
+          "technical": 0.19449560426595,
+          "fundamental": -0.16873800131579295,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.09297467927838929
+      },
+      {
+        "symbol": "ACN",
+        "scores": {
+          "technical": 0.21211923169141741,
+          "fundamental": -0.23694693865557886,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.0962708475272744
+      },
+      {
+        "symbol": "INTU",
+        "scores": {
+          "technical": 0.1881614260128718,
+          "fundamental": -0.19968205182862192,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.09733591998028783
+      },
+      {
+        "symbol": "TMO",
+        "scores": {
+          "technical": -0.06454816653678802,
+          "fundamental": 0.15182197336240372,
+          "sentiment": 0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.11272743597111723
+      },
+      {
+        "symbol": "LCID",
+        "scores": {
+          "technical": 0.28,
+          "fundamental": -0.23264858530750282,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.11726485853075028
+      },
+      {
+        "symbol": "DIS",
+        "scores": {
+          "technical": -0.005858363638524879,
+          "fundamental": 0.18461160387955572,
+          "sentiment": 0,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.1327105123397494
+      },
+      {
+        "symbol": "MSFT",
+        "scores": {
+          "technical": 0.10883448285765521,
+          "fundamental": 0.20919710734767016,
+          "sentiment": -0.1,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.14231339269370194
+      },
+      {
+        "symbol": "RBLX",
+        "scores": {
+          "technical": 0.14500000000000002,
+          "fundamental": 0.04439609894871996,
+          "sentiment": 0.1,
+          "options": -0.6499999999999999,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.21156039010512798
+      },
+      {
+        "symbol": "ADBE",
+        "scores": {
+          "technical": 0.023262799261965908,
+          "fundamental": -0.030363596488897915,
+          "sentiment": -0.2,
+          "options": 0,
+          "relativeStrength": -1
+        },
+        "weights": {
+          "technical": 0.2,
+          "fundamental": 0.1,
+          "sentiment": 0.35,
+          "options": 0.2,
+          "relativeStrength": 0.15
+        },
+        "consensus": -0.21838379979649658
+      }
+    ]
+  }
+}
