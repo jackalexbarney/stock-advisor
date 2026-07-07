@@ -25,7 +25,7 @@ import { getStockUniverse } from '../data/universe.js';
 import { saveRecommendations, loadWeights, saveWeights } from '../data/store.js';
 import { getAlpacaClient } from '../data/alpaca.js';
 
-const BUY_THRESHOLD = 0.35;
+const BUY_THRESHOLD = 0.28;
 const SELL_THRESHOLD = -0.25;
 
 // Default signal weights per risk tier
