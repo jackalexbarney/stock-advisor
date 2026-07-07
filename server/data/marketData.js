@@ -136,7 +136,7 @@ export async function fetchOptionsData(symbol) {
   if (hit) return hit;
 
   try {
-    const result = await yfCall(() => yf.options(symbol));
+    const result = await yfCall(() => yf.options(symbol), 1); // no retries — crumb-blocked on shared IP
     const chain = result.options?.[0];
     if (!chain) return null;
 
